@@ -21,7 +21,7 @@ body{
     margin: 20px;
     font-size: 14px;
     line-height: 1.6;
-}
+  }
 
 ul{
     padding-left: 20px;
@@ -44,10 +44,6 @@ a{
     font-weight: bold;
     color: red;
     text-decoration: none;
-
-
-
-
 }
 
 a:hover{
@@ -60,8 +56,6 @@ header{
     border-bottom: 2px solid #ddddff;
     display: flex;
     flex-direction: column;
-
-
 }
 
 #site_container{
@@ -78,11 +72,9 @@ header{
     text-align:center;
     display: flex;
     flex-direction: column;
-
 }
 
 #main_nav a{
-
     padding: 10px 2%;
     background: #ffdddd;
     margin-bottom: 5px;
@@ -99,19 +91,23 @@ header{
 
 #sidebar_content div{
   background:#ffffdd;
-  margin:10px;
+  margin:0px;
+
 }
 #site_footer{
   background:#fddbac;
   padding:20px;
   display: flex;
   justify-content: center;
-
 }
 
 #site_footer nav{
 display: flex;
 justify-content: space-between;
+margin:10px;
+}
+#site_footer nav a{
+  margin:10px;
 }
 
 @media screen and ( min-width: 600px ){
@@ -124,20 +120,45 @@ justify-content: space-between;
     flex-basis: 30%;
     margin:5PX;
   }
+  #site_footer nav a{
+    margin:10px;
+  }
   #sidebar_content{
     display: flex;
     background:#ffffdd;
     margin-bottom:15px;
+    justify-content: space-between;
+    padding: 15px;
+  }
 
+
+  #main_content{
+    padding:15px;
+    margin-bottom: 15px;
+  }
+  #side_container section{
+    margin: 15px;
   }
 
 @media screen and ( min-width: 1100px ){
-.header{
-  padding-bottom: 15px;
+header{
+    padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+#main_nav{
+    text-align:center;
+    display: flex;
+    /*width: 300px;*/
 }
 
+#main_nav a{
+  width:150px;
+  height:15px;
+  text-align: center;
+}
 }
